@@ -1,5 +1,5 @@
 module "vcn" {
-    source = "git@github.com:skuehnlein/oci_terraform_moduls.git//vcn"
+    source = "git://github.com/skuehnlein/oci_terraform_moduls.git//vcn"
 
     compartment_id = var.compartment_OCID
     vcn_cidr = var.vcn_cidr
