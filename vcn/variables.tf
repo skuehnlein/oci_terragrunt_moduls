@@ -10,7 +10,7 @@
     type        = string
 }
 
-variable "compartment_OCID" {
+variable "compartment_id" {
     description = "OCID of the compartment in which the VCN will be created"
     type        = string
 }
