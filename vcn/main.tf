@@ -4,6 +4,7 @@ module "vcn" {
     compartment_id = var.compartment_OCID
     vcn_cidr = var.vcn_cidr
     dns_label = var.stage
+    vcn_display_name = "VCN for the tenant ${var.organization} - stage ${var.stage}"
 
     create_nat_gateway = var.create_nat_gateway
     nat_gateway_display_name = "NAT Gateway for the tenant ${var.organization} - stage ${var.stage}"
