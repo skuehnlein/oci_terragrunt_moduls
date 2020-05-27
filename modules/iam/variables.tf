@@ -19,8 +19,8 @@ variable users {
 
 variable "groups" {
     description = "The definition of the groups which should be created"
-    type = map(object( {
+    type = map(object({
         group_name = string,
         group_description = string
-    }
+    }))
 }
