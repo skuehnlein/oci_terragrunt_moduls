@@ -10,7 +10,7 @@ variable "tenancy_OCID" {
 }
 variable users {
     description = "List with all users, which should be created"
-    type = list(object){
+    type = list(object({
         user_name = string,
         user_email = string
     }))
