@@ -5,5 +5,5 @@ module "iam" {
     iam_users = var.users
     iam_groups = var.groups
 
-    iam_users_group_membership = var.users_group
+    iam_users_group_membership = var.user_group_membership
 }
