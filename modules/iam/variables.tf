@@ -28,5 +28,5 @@ variable "groups" {
 variable "user_group_membership" {
     description = "The mapping between the users and the groups"
     type = map(list(string)
-    }
+    
 }
