@@ -4,4 +4,6 @@ module "iam" {
     tenancy_OCID = var.tenancy_OCID
     iam_users = var.users
     iam_groups = var.groups
+
+    iam_users_group_membership = var.users_group
 }

@@ -24,3 +24,11 @@ variable "groups" {
         group_description = string
     }))
 }
+
+variable "users_group" {
+    description = "The mapping between the users and the groups"
+    type = map( {
+        user_name = string,
+        group_name =  string
+    })
+}
