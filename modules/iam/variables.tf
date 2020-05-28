@@ -27,8 +27,8 @@ variable "groups" {
 
 variable "users_group" {
     description = "The mapping between the users and the groups"
-    type = map( {
+    type = map(object( {
         user_name = string,
         group_name =  string
-    })
+    }))
 }
