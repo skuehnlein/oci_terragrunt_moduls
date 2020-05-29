@@ -1,4 +1,4 @@
-module "compartment"{
+module "compartment" {
     source = "git://github.com/skuehnlein/oci_terraform_moduls.git//compartment"
 
     tenancy_OCID = var.tenancy_OCID
