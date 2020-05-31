@@ -1,7 +1,7 @@
-output "top_level_compartments" {
-    value = module.top_level_compartments.compartments
+output "comp_top_level" {
+    value = module.comp_top_level.compartments
 }
 
-output "second_level_compartments" {
-    value = module.top_level_compartments.compartments[*]
+output "comp_2nd_level" {
+    value = module.comp_2nd_level.compartments[*]
 }
