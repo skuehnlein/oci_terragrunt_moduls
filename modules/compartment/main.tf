@@ -1,4 +1,4 @@
-module "top_level_comp" {
+module "comp_top_level" {
     source = "git://github.com/skuehnlein/oci_terraform_moduls.git//compartment"
 
     tenancy_OCID = var.tenancy_OCID
@@ -6,7 +6,7 @@ module "top_level_comp" {
     is_top_level_compartemt = true
 }
 
-module "2nd_level_comp" {
+module "comp_2nd_level" {
     source = "git://github.com/skuehnlein/oci_terraform_moduls.git//compartment"
     
     tenancy_OCID = var.tenancy_OCID
