@@ -5,7 +5,7 @@ variable "tenancy_OCID" {
 
 variable "top_level_compartments" {
     description = "The definition of the top-level compartments which should be cretated"
-    type = map(object( {
+    type = list(object( {
         root_compartment = string,
         compartment_name = string,
         compartment_description = string
@@ -14,7 +14,7 @@ variable "top_level_compartments" {
 
 variable "second_level_compartments" {
     description = "The definition of the second-level compartments which should be cretated"
-    type = map(object( {
+    type = list(object( {
         root_compartment = string,
         compartment_name = string,
         compartment_description = string
