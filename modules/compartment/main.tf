@@ -13,3 +13,10 @@ module "comp_2nd_level" {
     compartments = var.second_level_compartments
     is_top_level_compartemt = false
 }
+
+module "comp_policy" {
+    source = "git://github.com/skuehnlein/oci_terraform_moduls.git//compartment"
+    
+    tenancy_OCID = var.tenancy_OCID
+    all_compartment_policies = var.all_compartment_policies
+}
