@@ -17,7 +17,7 @@ variable "display_anme" {
 
 variable "ingress_rules" {
     description = "List of all ingress rules of the security list"
-    type list(object({
+    type = list(object({
         protocol = string
         source =  string
 
@@ -26,7 +26,7 @@ variable "ingress_rules" {
 
 variable "engress_rules" {
     description = "List of all engress rules of the security list"
-    type list(object({
+    type = list(object({
         protocol = string
         source = string
 
