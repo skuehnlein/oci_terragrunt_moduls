@@ -1,6 +1,7 @@
 module "vcn" {
     source = "git://github.com/skuehnlein/oci_terraform_moduls.git//vcn"
 
+    tenancy_OCID = var.tenancy_OCID
     compartment_name = var.compartment_name
     vcn_cidr = var.vcn_cidr
     vcn_dns_label = var.stage
