@@ -6,12 +6,17 @@
 }
 
  variable "stage" {
-    description = "Name of the stage, for which the environment will be deployed"
+    description = "Name of the stage to which the environment will be deployed"
     type        = string
 }
 
-variable "compartment_id" {
-    description = "OCID of the compartment in which the VCN will be created"
+variable "tenancy_OCID" {
+    description = "The OCID of the tenancy"
+    type = string
+}
+
+variable "Compartment_name" {
+    description = "Name of the Compartment to which the VCN will be assigend"
     type        = string
 }
 
