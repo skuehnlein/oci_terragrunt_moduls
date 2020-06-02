@@ -24,7 +24,7 @@ variable "ingress_rules" {
     }))
 }
 
-variable "engress_rules" {
+variable "egress_rules" {
     description = "List of all engress rules of the security list"
     type = list(object({
         protocol = string
