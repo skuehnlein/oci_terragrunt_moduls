@@ -10,7 +10,7 @@ variable "compartment_name" {
 }
 
 # Modul-specific variables
-variabel "security_list_display_name" {
+variable "security_list_display_name" {
     description = "The name for the Security List. This will be shown in the OCI console"
     type = string
 }
