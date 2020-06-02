@@ -1,5 +1,5 @@
 module "security_list" {
-    source = "git://github.com/skuehnlein/oci_terraform_moduls.git//security_list"
+    source = "git://github.com/skuehnlein/oci_terraform_moduls.git//sec_list"
 
     tenancy_id = var.tenancy_id
     vnc_OCID = var.vnc_OCID
