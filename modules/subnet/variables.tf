@@ -34,6 +34,7 @@ variable "icmp_ingress_rules" {
         source =  string
 
     }))
+    default = []
 }
 
 variable "udp_ingress_rules" {
@@ -42,6 +43,7 @@ variable "udp_ingress_rules" {
         source =  string
 
     }))
+    default = []
 }
 
 variable "egress_rules" {
