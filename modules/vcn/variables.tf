@@ -15,7 +15,7 @@ variable "tenancy_OCID" {
     type = string
 }
 
-variable "Compartment_name" {
+variable "compartment_name" {
     description = "Name of the Compartment to which the VCN will be assigend"
     type        = string
 }
