@@ -8,7 +8,7 @@ module "security_list" {
     security_list_display_name = var.security_list_display_name
 
     ingress_rules = var.ingress_rules
-    engress_rules = var.engress_rules
+    egress_rules = var.egress_rules
 }
 
 #module "subnet" {
