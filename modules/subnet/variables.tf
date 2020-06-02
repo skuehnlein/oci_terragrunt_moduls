@@ -4,6 +4,11 @@ variable "tenancy_OCID" {
     type = string
 }
 
+variable "vnc_OCID" {
+    description = "The OCID of the VCN in which the resource will be created"
+    type = string
+}
+
 variable "compartment_name" {
     description = "Name of the compartment in which the resource will be created"
     type = string
