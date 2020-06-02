@@ -9,7 +9,7 @@ module "security_list" {
 
     tcp_ingress_rules = var.tcp_ingress_rules
     icmp_ingress_rules = var.icmp_ingress_rules
-    udp_ingress_rules = udp.icmp_ingress_rules
+    udp_ingress_rules = var.udp_ingress_rules
 
     egress_rules = var.egress_rules
 }
