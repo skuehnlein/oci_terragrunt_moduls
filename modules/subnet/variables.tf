@@ -10,8 +10,8 @@ variable "compartment_name" {
 }
 
 # Modul-specific variables
-variable "display_anme" {
-    description = "The name of the subent which will be shown in the OCI console"
+variabel "security_list_display_name" {
+    description = "The name for the Security List. This will be shown in the OCI console"
     type = string
 }
 
