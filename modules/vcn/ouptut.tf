@@ -15,7 +15,7 @@ output "nat_gateway_IP" {
 
 output "nat_route_table_OCID" {
     description = "OCID of the Route Table for the Nat Gateway"
-    value = module.vcn.drg_route_table_OCID
+    value = module.vcn.nat_gateway_OCID
 }
 
 output "internet_gateway_OCID" {
