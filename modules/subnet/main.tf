@@ -1,7 +1,7 @@
 module "security_list" {
     source = "git://github.com/skuehnlein/oci_terraform_moduls.git//sec_list"
 
-    tenancy_id = var.tenancy_id
+    tenancy_OCID = var.tenancy_OCID
     vnc_OCID = var.vnc_OCID
     compartment_name = var.compartment_name
 
