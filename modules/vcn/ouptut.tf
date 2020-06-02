@@ -34,10 +34,10 @@ output "dynamic_routing_gateway_OCID" {
     value = module.vcn.dynamic_routing_gateway_OCID
 } 
 
-output "drg_route_table_OCID" {
-    description = "OCID of the Route Table for the Dynamic Routing Gateway"
-    value = module.vcn.drg_route_table_OCID
-}
+#output "drg_route_table_OCID" {
+#    description = "OCID of the Route Table for the Dynamic Routing Gateway"
+#    value = module.vcn.drg_route_table_OCID
+#}
 
 
 
