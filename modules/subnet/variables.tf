@@ -16,6 +16,11 @@ variable "compartment_name" {
 
 # Modul-specific variables - Subnet
 
+variable "subnet_cidr_block" {
+    description = "The CIDR Block for the subnet"
+    type = string
+}
+
 variable "availability_domain" {
     description = "The availability domain in which the AD-specific subnet will be created"
     type = string

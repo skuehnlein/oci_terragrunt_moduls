@@ -23,6 +23,7 @@ module "subnet" {
     vcn_OCID = var.vcn_OCID
     compartment_name = var.compartment_name
 
+    subnet_cidr_block = var.subnet_cidr_block
     subnet_display_name = var.subnet_display_name
     subnet_dns_label = var.subnet_dns_label
     is_private_subnet = var.is_private_subnet
