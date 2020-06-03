@@ -22,7 +22,7 @@ variable "availability_domain" {
     default = ""
 }
 
-variable "subnet_display_anme" {
+variable "subnet_display_name" {
     description = "The name of the subent which will be shown in the OCI console"
     type = string
 }
