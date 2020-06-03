@@ -27,5 +27,5 @@ module "subnet" {
     subnet_dns_label = var.subnet_dns_label
     is_private_subnet = var.is_private_subnet
     route_table_OCID = var.route_table_OCID
-    security_list_OCIDs = var.security_list_OCIDs
+    security_list_OCIDs = module.security_list.security_list_OCID
 }
