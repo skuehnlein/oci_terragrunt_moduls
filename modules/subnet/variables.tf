@@ -23,7 +23,9 @@ variable "security_list_display_name" {
 variable "tcp_ingress_rules" {
     description = "List of all ingress rules of the security list - protocol: TCP"
     type = list(object({
-        source =  string
+        description = string,
+        source =  string,
+        destination_port = number
 
     }))
 }
@@ -31,8 +33,8 @@ variable "tcp_ingress_rules" {
 variable "icmp_ingress_rules" {
     description = "List of all ingress rules of the security list - protocol: ICMP"
     type = list(object({
+        description = string,
         source =  string
-
     }))
     default = []
 }
@@ -40,16 +42,42 @@ variable "icmp_ingress_rules" {
 variable "udp_ingress_rules" {
     description = "List of all ingress rules of the security list - protocol: ICMP"
     type = list(object({
-        source =  string
+        description = string,
+        source =  string,
+        destination_port = number
 
     }))
     default = []
 }
 
-variable "egress_rules" {
-    description = "List of all engress rules of the security list"
+variable "tcp_egress_rules" {
+    description = "List of all egress rules of the security list - protocol: TCP"
     type = list(object({
+        description = string,
+        destination = string,
+        destination_port = number
+
+    }))
+    default = []
+}
+
+variable "icmp_egress_rules" {
+    description = "List of all egress rules of the security list - protocol: ICMP"
+    type = list(object({
+        description = string,
         destination = string
 
     }))
+    default = []
+}
+
+variable "udp_egress_rules" {
+    description = "List of all egress rules of the security list - protocol: UDP"
+    type = list(object({
+        description = string,
+        destination = string,
+        destination_port = number
+
+    }))
+    default = []
 }

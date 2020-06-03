@@ -11,7 +11,9 @@ module "security_list" {
     icmp_ingress_rules = var.icmp_ingress_rules
     udp_ingress_rules = var.udp_ingress_rules
 
-    egress_rules = var.egress_rules
+    tcp_egress_rules = var.tcp_egress_rules
+    icmp_egress_rules = var.icmp_egress_rules
+    udp_egress_rules = var.udp_egress_rules
 }
 
 #module "subnet" {
