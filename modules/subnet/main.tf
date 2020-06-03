@@ -16,7 +16,16 @@ module "security_list" {
     udp_egress_rules = var.udp_egress_rules
 }
 
-#module "subnet" {
-#    source = "git://github.com/skuehnlein/oci_terraform_moduls.git//subnet"
+module "subnet" {
+    source = "git://github.com/skuehnlein/oci_terraform_moduls.git//subnet"
 
-#}
+    tenancy_OCID = var.tenancy_OCID
+    vcn_OCID = var.vcn_OCID
+    compartment_name = var.compartment_name
+
+    subnet_display_name = var.subnet_display_name
+    subnet_dns_label = var.subnet_dns_label
+    is_private_subnet = var.is_private_subnet
+    route_table_OCID = var.route_table_OCID
+    security_list_OCIDs = var.security_list_OCIDs
+}
