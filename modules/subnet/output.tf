@@ -5,5 +5,5 @@ output "security_list_OCID" {
 
 output "subnet_OCID" {
     description = "The OCID of the created Subnet"
-    value = modulde.subnet.subnet_OCID
+    value = module.subnet.subnet_OCID
 }
