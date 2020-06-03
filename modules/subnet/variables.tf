@@ -44,11 +44,6 @@ variable "route_table_OCID" {
     type = string
 }
 
-variable "security_list_OCIDs" {
-    description = "The list of OCIDs of the security lists which will be assigend to the subnet"
-    type = list(string)
-}
-
 # Modul-specific variables - Security List
 variable "security_list_display_name" {
     description = "The name for the Security List. This will be shown in the OCI console"
