@@ -55,11 +55,6 @@ variable "is_private_subnet" {
     default = false
 }
 
-variable "route_table_OCID" {
-    description = "The OCID of the route table which will be assigned to the subnet"
-    type = string
-}
-
 # Modul-specific variables - Security List
 variable "security_list_display_name" {
     description = "The name for the Security List. This will be shown in the OCI console"
