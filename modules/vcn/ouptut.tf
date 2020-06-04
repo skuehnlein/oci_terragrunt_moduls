@@ -13,31 +13,14 @@ output "nat_gateway_IP" {
     value = module.vcn.nat_gateway_IP
 }
 
-output "nat_route_table_OCID" {
-    description = "OCID of the Route Table for the Nat Gateway"
-    value = module.vcn.nat_gateway_OCID
-}
-
 output "internet_gateway_OCID" {
     description = "OCID of the created Internet Gateway"
     value = module.vcn.internet_gateway_OCID
 } 
 
-output "internet_gateway_route_table_OCID" {
-    description = "OCID of the Route Table for the Internet Gateway"
-    value = module.vcn.internet_gateway_route_table_OCID
-}
-
-
 output "dynamic_routing_gateway_OCID" {
     description = "OCID of the created Dynamic Routing Gateway"
     value = module.vcn.dynamic_routing_gateway_OCID
 } 
-
-#output "drg_route_table_OCID" {
-#    description = "OCID of the Route Table for the Dynamic Routing Gateway"
-#    value = module.vcn.drg_route_table_OCID
-#}
-
 
 
