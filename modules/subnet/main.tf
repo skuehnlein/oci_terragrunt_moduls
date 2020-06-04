@@ -23,7 +23,7 @@ module "route_table" {
     vcn_OCID = var.vcn_OCID
     compartment_name = var.compartment_name
 
-    display_name = "Route Table for the subnet - var.subnet_display_name"
+    route_table_display_name = "Route Table for the subnet - var.subnet_display_name"
 
     route_rules = var.route_rules
 }
