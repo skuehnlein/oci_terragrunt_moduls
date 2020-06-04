@@ -14,7 +14,19 @@ variable "compartment_name" {
     type = string
 }
 
-# Modul-specific variables - Subnet
+# Modulspecific variabels - Route Table
+variable "route_rules" {
+    description = "Route Rules for the route table"
+    type = list(object({
+        network_entity_id = string,
+        cidr_block = string,
+        description = string,
+        destination = string,
+        destination_type = string
+    }))
+} 
+
+# Modulspecific variables - Subnet
 
 variable "subnet_cidr_block" {
     description = "The CIDR Block for the subnet"
