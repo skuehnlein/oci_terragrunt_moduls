@@ -3,6 +3,8 @@ module "vcn" {
 
     tenancy_OCID = var.tenancy_OCID
     compartment_name = var.compartment_name
+    region = var.region
+
     vcn_cidr = var.vcn_cidr
     vcn_dns_label = var.stage
     vcn_display_name = "VCN for the tenant ${var.organization} - stage ${var.stage}"
@@ -12,7 +14,6 @@ module "vcn" {
 
     create_internet_gateway = var.create_internet_gateway
     intenet_gateway_display_name = "Internet Gateway for the tenant ${var.organization} - stage ${var.stage}"
-
 
     create_service_gateway = var.create_service_gateway
     service_gateway_display_name = "Service Gateway for the tenant ${var.organization} - stage ${var.stage}"
